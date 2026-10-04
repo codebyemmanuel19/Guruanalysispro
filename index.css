@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.poster {
+  width: 100%;
+  max-width: 900px;
+  min-height: 100vh;
+  margin: 0 auto;
+
+  background: #000;
+
+  padding: clamp(120px, 20vh, 315px)
+           clamp(20px, 5vw, 50px)
+           80px;
+
+  text-align: center;
+}
+
+
+/* =========================
+   TITLE
+========================= */
+
+h1 {
+  color: #ffc400;
+
+  font-size: clamp(38px, 7vw, 78px);
+
+  line-height: 1.08;
+
+  font-weight: 800;
+
+  letter-spacing: -1px;
+}
+
+
+/* =========================
+   SERVICES
+========================= */
+
+.services {
+  width: 100%;
+
+  margin-top: clamp(55px, 10vh, 105px);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: clamp(25px, 4vh, 40px);
+}
+
+.service {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: clamp(8px, 1.5vw, 15px);
+
+  font-size: clamp(22px, 4.5vw, 48px);
+
+  font-weight: 400;
+
+  width: 100%;
+}
+
+.emoji {
+  flex-shrink: 0;
+
+  font-size: 1em;
+
+  line-height: 1;
+}
+
+
+/* =========================
+   DAILY UPDATE
+========================= */
+
+.daily {
+  width: 100%;
+
+  margin-top: clamp(60px, 10vh, 105px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: clamp(8px, 1.5vw, 16px);
+
+  font-size: clamp(20px, 4vw, 43px);
+
+  line-height: 1.2;
+}
+
+
+/* =========================
+   TELEGRAM BUTTON
+========================= */
+
+.telegram-btn {
+  width: 100%;
+
+  min-height: clamp(75px, 13vw, 145px);
+
+  margin-top: clamp(55px, 10vh, 105px);
+
+  padding: 20px clamp(15px, 4vw, 35px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: clamp(18px, 4vw, 34px);
+
+  background: #00d85a;
+
+  color: #fff;
+
+  text-decoration: none;
+
+  font-size: clamp(20px, 4vw, 43px);
+
+  font-weight: 800;
+
+  line-height: 1.2;
+
+  transition: 0.2s ease;
+}
+
+.telegram-btn:hover {
+  background: #00e863;
+
+  transform: scale(1.02);
+}
+
+
+/* =========================
+   SMALL PHONES
+========================= */
+
+@media (max-width: 400px) {
+
+  .poster {
+    padding-top: 100px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+
+  .services {
+    margin-top: 55px;
+    gap: 25px;
+  }
+
+  .service {
+    font-size: 21px;
+  }
+
+  .daily {
+    margin-top: 60px;
+    font-size: 19px;
+  }
+
+  .telegram-btn {
+    margin-top: 60px;
+    min-height: 75px;
+    font-size: 19px;
+  }
+}
+
+
+/* =========================
+   NORMAL PHONES
+========================= */
+
+@media (min-width: 401px) and (max-width: 600px) {
+
+  .poster {
+    padding-top: 130px;
+  }
+
+  .service {
+    font-size: 25px;
+  }
+
+  .daily {
+    font-size: 22px;
+  }
+
+  .telegram-btn {
+    font-size: 22px;
+  }
+}
+
+
+/* =========================
+   TABLETS
+========================= */
+
+@media (min-width: 601px) and (max-width: 900px) {
+
+  .poster {
+    padding-top: 180px;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  .service {
+    font-size: 36px;
+  }
+
+  .daily {
+    font-size: 32px;
+  }
+
+  .telegram-btn {
+    font-size: 32px;
+  }
+}
+
+
+/* =========================
+   LAPTOPS / DESKTOP
+========================= */
+
+@media (min-width: 901px) {
+
+  .poster {
+    min-height: 1600px;
+  }
+
+}
+
+
+/* =========================
+   VERY LARGE SCREENS
+========================= */
+
+@media (min-width: 1400px) {
+
+  .poster {
+    max-width: 900px;
+  }
+
+}
