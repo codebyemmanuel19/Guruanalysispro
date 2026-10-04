@@ -7,7 +7,7 @@
 html,
 body {
   width: 100%;
-  min-height: 100%;
+  min-height: 90%;
 }
 
 body {
@@ -19,7 +19,7 @@ body {
 .poster {
   width: 100%;
   max-width: 900px;
-  min-height: 100vh;
+  min-height: 90vh;
   margin: 0 auto;
 
   background: #000;
